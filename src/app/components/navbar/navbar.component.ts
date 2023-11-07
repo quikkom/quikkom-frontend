@@ -17,6 +17,7 @@ export class NavbarComponent {
     'Bisey Bulamadim',
     'Deneme1'
   ]
+
   @HostListener('document:click', ['$event'])
   handleClickOutsideInput = (event : Event) => {
     if (!this.elementRef.nativeElement.contains(event.target))
